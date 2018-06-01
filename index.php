@@ -21,6 +21,12 @@ try {
 </fieldset>
 <br/><br/>
 
+<?php 
+    $sql = "SELECT * FROM mensagens ORDER BY data_msg DESC";
+    $sql = $pdo->query($sql);
+    
+?>
+
 <strong>Nome da pessoa</strong><br/>
 A mensagem fica aqui
 <hr/>
