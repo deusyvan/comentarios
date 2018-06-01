@@ -27,8 +27,8 @@ try {
     if ($sql->rowCount() > 0) {
         foreach ($sql->fetchAll() as $mensagem):
         ?>
-            <strong>Nome da pessoa</strong><br/>
-            A mensagem fica aqui
+            <strong><?php $mensagem['nome'];?></strong><br/>
+            	<?php $mensagem['msg'];?>
             <hr/>
         <?php 
         endforeach;
