@@ -7,7 +7,10 @@ try {
 }
 
 if (isset($_POST['nome']) && empty($_POST['nome']) == FALSE) {
-    ;
+    $nome = $_POST['nome'];
+    $mensagem = $_POST['mensagem'];
+    
+    
 }
 ?>
 
