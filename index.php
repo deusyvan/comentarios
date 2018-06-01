@@ -6,6 +6,9 @@ try {
     exit;
 }
 
+if (isset($_POST['nome']) && empty($_POST['nome']) == FALSE) {
+    ;
+}
 ?>
 
 <fieldset>
