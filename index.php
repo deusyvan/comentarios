@@ -26,11 +26,12 @@ try {
     $sql = $pdo->query($sql);
     if ($sql->rowCount() > 0) {
         foreach ($sql->fetchAll() as $mensagem):
-        
+        ?>
+            <strong>Nome da pessoa</strong><br/>
+            A mensagem fica aqui
+            <hr/>
+        <?php 
         endforeach;
     }
 ?>
 
-<strong>Nome da pessoa</strong><br/>
-A mensagem fica aqui
-<hr/>
