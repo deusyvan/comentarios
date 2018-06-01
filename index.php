@@ -9,7 +9,8 @@
 		<input type="submit" value="Enviar Mensagem" />
 	</form>
 </fieldset>
+<br/><br/>
 
 <strong>Nome da pessoa</strong><br/>
 A mensagem fica aqui
-
+<hr/>
