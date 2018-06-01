@@ -24,7 +24,11 @@ try {
 <?php 
     $sql = "SELECT * FROM mensagens ORDER BY data_msg DESC";
     $sql = $pdo->query($sql);
-    
+    if ($sql->rowCount() > 0) {
+        foreach ($sql->fetchAll() as $mensagem):
+        
+        endforeach;
+    }
 ?>
 
 <strong>Nome da pessoa</strong><br/>
