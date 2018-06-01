@@ -36,8 +36,8 @@ if (isset($_POST['nome']) && empty($_POST['nome']) == FALSE) {
     if ($sql->rowCount() > 0) {
         foreach ($sql->fetchAll() as $mensagem):
         ?>
-            <strong><?php $mensagem['nome'];?></strong><br/>
-            	<?php $mensagem['msg'];?>
+            <strong><?php echo $mensagem['nome']; ?></strong><br/>
+            	<?php echo $mensagem['msg']; ?>
             <hr/>
         <?php 
         endforeach;
