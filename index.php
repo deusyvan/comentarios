@@ -32,6 +32,8 @@ try {
             <hr/>
         <?php 
         endforeach;
+    } else {
+        echo "Não há mensagens.";
     }
 ?>
 
